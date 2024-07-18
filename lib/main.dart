@@ -1,7 +1,6 @@
 import "package:flutter/material.dart";
 
 import "config/set_up.dart";
-import "presentation/presentation.dart";
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,6 +15,10 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) => const MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: MainPage(),
+        home: Scaffold(
+          body: Center(
+            child: Text("Hello World"),
+          ),
+        ),
       );
 }
